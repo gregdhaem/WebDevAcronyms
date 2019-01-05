@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Acronyme{% endblock %}
+
+{% block body %}
+    <h1>Acronyme</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ acronyme.id }}</td>
+            </tr>
+            <tr>
+                <th>Initial</th>
+                <td>{{ acronyme.initial }}</td>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <td>{{ acronyme.definition }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="btn" href="{{ path('acronyme_index') }}">Retour a la liste</a>
+
+    <a class="btn" href="{{ path('acronyme_edit', {'id': acronyme.id}) }}">Modifier</a>
+
+    {{ include('acronyme/_delete_form.html.twig') }}
+{% endblock %}
