@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 
 :root {
-    --background: rgba(66, 120, 201, 0.85);
-    --backgroundhover: rgba(4, 29, 68, 0.85);
+    --background: rgba(85, 214, 170, .85);
+    --backgroundhover: rgba(100, 219, 190, 0.85);
 }
 
 *, *::before, *::after {
@@ -10,35 +10,28 @@
 }
 
 body {
-
-    background: #777;
-    color: #faebd7;
+    margin: 0;
+    background: #222;
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    margin: 0;
-
-}
-
-h1 {
-    text-align: center;
 }
 
 .content {
-    height: 200vh;
-    background-image: url(https://picsum.photos/1000);
-    background-color: rgb(51, 51, 51, 0.5);
+    /*height: 100vh;
+    background-image: url(https://picsum.photos/1000);*/
+    background-color: rgb(51, 51, 51, 0.8);
     background-blend-mode: multiply;
     background-size: cover;
     display: grid;
-    /*place-items: center;*/
+    margin-top: 1em;
+    place-items: center;
+    padding-bottom: 1em;
 }
-
-
 
 header {
     background: var(--background);
     text-align: center;
-    position: fixed;
+    /*position: fixed;*/
     z-index: 999;
     width: 100%;
 }
@@ -137,21 +130,6 @@ input[type=text], select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-}
-  
-.btn {
-    width: 100%;
-    background-color: var(--background);
-    color: white;
-    padding: 0.5em 1em;
-    margin: 0.5em 0;
-    border: none;
-    border-radius: 0.25em;
-    cursor: pointer;
-}
-  
-.btn:hover {
-    background-color: var(--backgroundhover);
 }
   
 div#acronyme, div#user, div#category, div#role {
